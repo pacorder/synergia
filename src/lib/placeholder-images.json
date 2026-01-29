@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "portfolio-1",
+      "description": "Landing page para startup de tecnología financiera.",
+      "imageUrl": "https://images.unsplash.com/photo-1559028012-481c04fa702d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWIlMjBkZXNpZ258ZW58MHx8fHwxNzY5NzAzMTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web design"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Página de producto para una marca de e-commerce de moda.",
+      "imageUrl": "https://images.unsplash.com/photo-1603071604483-bf4e87dd13ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYW5kaW5nJTIwcGFnZXxlbnwwfHx8fDE3Njk2ODA0MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landing page"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Web corporativa para una consultora de negocios.",
+      "imageUrl": "https://images.unsplash.com/photo-1603201667493-4c2696de0b1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3Jwb3JhdGUlMjB3ZWJzaXRlfGVufDB8fHx8MTc2OTcwOTA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate website"
+    }
+  ]
 }

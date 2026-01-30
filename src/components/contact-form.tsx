@@ -14,7 +14,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
@@ -24,11 +24,8 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Por favor, introduce un correo electrónico válido.",
   }),
-  phone: z.string().min(8, {
-    message: "El teléfono debe tener al menos 8 dígitos.",
-  }),
-  action: z.enum(["quote", "call", "whatsapp"], {
-    required_error: "Debes seleccionar una opción.",
+  message: z.string().min(10, {
+    message: "Tu mensaje debe tener al menos 10 caracteres.",
   }),
 });
 
@@ -39,7 +36,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
+      message: "",
     },
   });
 
@@ -83,54 +80,12 @@ export function ContactForm() {
         />
         <FormField
           control={form.control}
-          name="phone"
+          name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Teléfono</FormLabel>
+              <FormLabel>Tu Mensaje</FormLabel>
               <FormControl>
-                <Input placeholder="+56 9 1234 5678" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="action"
-          render={({ field }) => (
-            <FormItem className="space-y-3">
-              <FormLabel>¿Qué te gustaría hacer?</FormLabel>
-              <FormControl>
-                <RadioGroup
-                  onValueChange={field.onChange}
-                  defaultValue={field.value}
-                  className="flex flex-col space-y-2"
-                >
-                  <FormItem className="flex items-center space-x-3 space-y-0">
-                    <FormControl>
-                      <RadioGroupItem value="quote" />
-                    </FormControl>
-                    <FormLabel className="font-normal">
-                      Solicitar cotización
-                    </FormLabel>
-                  </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0">
-                    <FormControl>
-                      <RadioGroupItem value="call" />
-                    </FormControl>
-                    <FormLabel className="font-normal">
-                      Agendar una llamada
-                    </FormLabel>
-                  </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0">
-                    <FormControl>
-                      <RadioGroupItem value="whatsapp" />
-                    </FormControl>
-                    <FormLabel className="font-normal">
-                      Contacto por WhatsApp
-                    </FormLabel>
-                  </FormItem>
-                </RadioGroup>
+                <Textarea placeholder="Cuéntanos sobre tu proyecto..." {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

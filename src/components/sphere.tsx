@@ -49,8 +49,8 @@ const Sphere = () => {
       vertexShader,
       fragmentShader,
       uniforms: {
-        color1: { value: new THREE.Color("#008080") },
-        color2: { value: new THREE.Color("#40E0D0") },
+        color1: { value: new THREE.Color("#3b82f6") },
+        color2: { value: new THREE.Color("#02050a") },
       },
     });
 

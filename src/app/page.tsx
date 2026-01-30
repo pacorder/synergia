@@ -5,9 +5,6 @@ import {
   Paintbrush,
   TrendingUp,
   CheckCircle,
-  Mail,
-  Phone,
-  MapPin,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";

@@ -116,7 +116,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:max-w-none lg:grid-cols-4 mt-12">
+            <div className="mx-auto grid max-w-7xl justify-center gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-4 mt-12">
               {valueProps.map((prop, index) => (
                 <Card key={index} className="h-full">
                   <CardHeader className="flex flex-col items-start gap-4">
@@ -199,27 +199,6 @@ export default function Home() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
-          </div>
-        </AnimatedSection>
-        
-        <AnimatedSection className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight font-headline">Servicios Adicionales</h2>
-              <p className="mx-auto max-w-[600px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Simplificamos aún más tu lanzamiento con servicios complementarios.
-              </p>
-            </div>
-            <div className="mx-auto w-full max-w-3xl">
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-lg font-semibold">Hosting y Dominio</AccordionTrigger>
-                  <AccordionContent className="text-left text-foreground/80">
-                    No te preocupes por los detalles técnicos. Ofrecemos paquetes de hosting optimizados para velocidad y seguridad, y te ayudamos con el registro de tu dominio, incluyendo dominios .cl a través de NIC.cl, para que tu presencia online sea sólida desde el primer día.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
           </div>
         </AnimatedSection>
 

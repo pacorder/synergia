@@ -30,12 +30,12 @@ const Sphere = () => {
     currentMount.appendChild(renderer.domElement);
 
     // Geometry
-    const geometry = new THREE.IcosahedronGeometry(1.2, 1);
+    const geometry = new THREE.IcosahedronGeometry(1.5, 1);
 
     // Material
     const material = new THREE.MeshStandardMaterial({
-      color: "#3b82f6",
-      emissive: "#3b82f6",
+      color: "#689df9",
+      emissive: "#689df9",
       emissiveIntensity: 0.3,
       wireframe: true,
     });

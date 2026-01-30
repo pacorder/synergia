@@ -4,7 +4,7 @@ import {
   Zap,
   Paintbrush,
   TrendingUp,
-  CheckCircle,
+  BrainCircuit,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -34,23 +34,23 @@ import { ContactForm } from "@/components/contact-form";
 const valueProps = [
   {
     icon: Zap,
-    title: "Velocidad de Entrega",
-    description: "Lanzamos tu landing page en días, no semanas. Empleamos un enfoque ágil para que puedas empezar a convertir visitantes en clientes lo antes posible.",
+    title: "Desarrollo Web Ultrarrápido",
+    description: "Lanzamos tu webapp o landing page en tiempo récord, enfocándonos en un despliegue ágil para que captures tu mercado sin demoras.",
+  },
+  {
+    icon: BrainCircuit,
+    title: "Capacitaciones en IA",
+    description: "Potenciamos a empresas y colegios con programas de formación en Inteligencia Artificial, desde fundamentos hasta implementación avanzada.",
   },
   {
     icon: Paintbrush,
-    title: "Diseño Moderno y Atractivo",
-    description: "Creamos interfaces visualmente impactantes y optimizadas para la experiencia de usuario, asegurando que tu marca destaque y comunique profesionalismo.",
+    title: "Diseño Futurista con IA",
+    description: "Creamos interfaces de vanguardia, inteligentes y atractivas que posicionan a tu marca en la delantera de la innovación tecnológica.",
   },
   {
     icon: TrendingUp,
-    title: "Enfoque en Resultados",
-    description: "Cada elemento de tu página está diseñado estratégicamente para maximizar la conversión, desde la estructura del contenido hasta las llamadas a la acción.",
-  },
-  {
-    icon: CheckCircle,
-    title: "Mínima Fricción para Ti",
-    description: "Nos encargamos de todo el proceso técnico y de diseño. Tu solo necesitas contarnos tu visión y nosotros la hacemos realidad con la mínima intervención de tu parte.",
+    title: "Estrategia de Crecimiento",
+    description: "Cada solución está diseñada para la conversión y el crecimiento, asegurando no solo una presencia digital, sino un motor de negocio.",
   },
 ];
 
@@ -86,15 +86,15 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4 z-10">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl xl:text-6xl/none font-headline">
-                    Lleva tu Negocio al Siguiente Nivel, a la Velocidad de la Luz
+                    Innovación Acelerada: Desarrollo Web y Capacitación en IA
                   </h1>
                   <p className="max-w-[600px] text-foreground/80 md:text-xl">
-                    En Synerg-IA creamos landing pages de alto impacto y velocidad superior. Diseñadas para convertir, listas en tiempo récord.
+                    Transformamos tu presencia digital con webapps de vanguardia y preparamos a tu equipo para el futuro de la inteligencia artificial.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    <Link href="#contact">Obtén tu Webapp Rápida</Link>
+                    <Link href="#contact">Hablemos de tu Proyecto</Link>
                   </Button>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">Propuesta de Valor</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">¿Por qué Synerg-IA?</h2>
                 <p className="max-w-[900px] text-foreground/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Combinamos diseño de vanguardia, tecnología de punta y un proceso ultra-eficiente para darte la ventaja competitiva que necesitas.
+                  Fusionamos desarrollo de software ágil con la potencia de la inteligencia artificial. Creamos soluciones web y capacitamos equipos para liderar la nueva era tecnológica.
                 </p>
               </div>
             </div>

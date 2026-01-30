@@ -82,8 +82,8 @@ const Sphere = () => {
       sphere.rotation.y += 0.001;
       
       // Follow mouse
-      sphere.rotation.y += (mouseX * 0.5 - sphere.rotation.y) * 0.02;
-      sphere.rotation.x += (mouseY * 0.5 - sphere.rotation.x) * 0.02;
+      sphere.rotation.y += (mouseX * 0.5 - sphere.rotation.y) * 0.04;
+      sphere.rotation.x += (mouseY * 0.5 - sphere.rotation.x) * 0.04;
       
       renderer.render(scene, camera);
     };
